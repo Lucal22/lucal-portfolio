@@ -1,3 +1,29 @@
-.app__about{
+.app__about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     min-height: 100px;
+
 }
+
+.app__about-img {
+    width: 100%;
+    min-height: 100px;
+
+    img {
+        width: auto;
+        height: auto;
+
+        @media screen and (min-width: 2000px) {
+            width: 180px;
+            height: 40px;
+        }
+    }
+}
+
+    .app__about-description {
+
+        div {
+            width: 70%;
+        }
+    }
