@@ -1,11 +1,12 @@
 import React from 'react'
-
 import './Skills.scss'
+import images from '../../constants/images';
 
 
 const Skills = () => {
   return (
-    <div></div>
+    <section className='app__skills'>
+    </section>
   )
 }
 

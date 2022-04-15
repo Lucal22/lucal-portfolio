@@ -8,9 +8,9 @@ import './Header.scss'
 const Header = () => {
   const [toggle, setToggle] = useState(false)
   return ( <div className='app__header'>
-    <nav className='app__navbar'>
+    <nav className='app_navbar'>
       <ul className='app__navbar-links'>
-        {['home', 'Sobre', 'Projetos', 'Habilidades', 'contato'].map((item)=>(
+        {['home', 'Projetos', 'Formação', 'contato'].map((item)=>(
           <li className='app__flex p-text' key={`link-${item}`}>
             <div />
             <a href={`#${item}`}>{item}</a>
@@ -28,7 +28,7 @@ const Header = () => {
             >
               <HiX onClick={()=>setToggle(false)}/>
               <ul>
-              {['home', 'Sobre', 'Projetos', 'Habilidades', 'contato'].map((item)=>(
+              {['home', 'Projetos', 'Habilidades', 'contato'].map((item)=>(
           <li key={item}>
             <a href={`#${item}`}  onClick={()=>setToggle(false)}>{item}</a>
           </li>

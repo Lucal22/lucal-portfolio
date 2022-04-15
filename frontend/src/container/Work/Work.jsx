@@ -4,7 +4,8 @@ import './Work.scss'
 
 const Work = () => {
   return (
-    <div></div>
+    <section className='app__work'>
+    </section>
   )
 }
 
