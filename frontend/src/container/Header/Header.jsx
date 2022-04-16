@@ -7,8 +7,8 @@ import './Header.scss'
 
 const Header = () => {
   const [toggle, setToggle] = useState(false)
-  return ( <div className='app__header'>
-    <nav className='app_navbar'>
+  return (
+    <nav className='app__navbar'>
       <ul className='app__navbar-links'>
         {['home', 'Projetos', 'Formação', 'contato'].map((item)=>(
           <li className='app__flex p-text' key={`link-${item}`}>
@@ -39,7 +39,6 @@ const Header = () => {
         }
       </div>
     </nav>
-    </div>
   )
 
 }
