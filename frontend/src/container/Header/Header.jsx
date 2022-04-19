@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <nav className='app__navbar'>
       <ul className='app__navbar-links'>
-        {['home', 'Projetos', 'Formação', 'contato'].map((item)=>(
+        {['Home', 'Projetos', 'Formação', 'contato'].map((item)=>(
           <li className='app__flex p-text' key={`link-${item}`}>
             <div />
             <a href={`#${item}`}>{item}</a>
