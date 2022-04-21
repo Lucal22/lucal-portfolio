@@ -1,48 +1,114 @@
 .app__work {
-    display: flex;
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
     min-height: 800px;
-    justify-content: center;
-    align-items: center;
     background-color: var(--white-color);
 }
 
-
-
-
-//Card
-
-.app__work-card {
-    width: 500px;
-    max-width: 500px;
-    height: 300px;
-    box-shadow: 0 0 0.5em var(--gray-color);
-    border-radius: 5px;
-}
-
-.app__work-card-content {
-    display: flex;
-    align-items: flex-end;
-    padding: 5px;
-    width: 100%;
-    height: 250px;
-    background-image: url(../../assets/keeper.png);
-    background-size: cover;
-}
-
-.app__work-card-title {
-    width: 100%;
-    height: 50px;
-    padding: 5px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.app__work-card-skills{
-    display: flex;
+.app__work-content {
+    display: block;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 50px;
-    h1{
-        
+}
+
+.app__work-title {
+    text-align: center;
+    transition: ease all .5s;
+
+    h1 {
+        font-size: 100px;
+    }
+
+    p {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+    @media screen and(max-width: 660px) {
+        h1 {
+            font-size: 80px;
+        }
+
+        p {
+            font-size: 25px;
+        }
+    }
+
+    @media screen and(max-width: 550px) {
+        p {
+            font-size: 21px;
+        }
     }
 }
+
+    .app__work-portfolio {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+
+        @media screen and(max-width: 750px) {
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+    }
+
+    //Card
+
+    .app__work-card {
+        position: relative;
+        width: 100%;
+        max-width: 500px;
+        height: 300px;
+        box-shadow: 0 0 0.5em var(--gray-color);
+        border-radius: 5px;
+        margin: auto;
+
+        &:hover {
+            bottom: 25px;
+            box-shadow: 0 0 3em var(--gray-color);
+
+        }
+
+    }
+
+    .app__work-card-content {
+        display: flex;
+        align-items: flex-end;
+        padding: 5px;
+        width: 100%;
+        height: 250px;
+        background-size: cover;
+        background-repeat: no-repeat, no-repeat;
+        background-blend-mode: overlay, overlay;
+    }
+
+    .app__work-card-skills {
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+
+        img {
+            margin-left: 10px;
+            width: 48px;
+            height: 48px;
+        }
+    }
+
+    .app__work-card-description {
+        width: 100%;
+        height: 50px;
+        padding: 5px;
+        display: block;
+
+        h1 {
+            font-size: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            width: fit-content;
+        }
+    }
