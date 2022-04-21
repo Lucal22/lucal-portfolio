@@ -27,6 +27,7 @@ import profile from '../assets/profile.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
 import luis from '../assets/luis.jpg';
+import arrow from '../assets/arrow-down-pixel.png';
 
 import adidas from '../assets/adidas.png';
 import amazon from '../assets/amazon.png';
@@ -64,6 +65,7 @@ export default {
   circle,
   logo,
   luis,
+  arrow,
   adidas,
   amazon,
   asus,
