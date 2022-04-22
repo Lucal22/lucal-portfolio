@@ -2,7 +2,7 @@
     display: block;
     max-width: 1200px;
     margin: 0 auto;
-    min-height: 800px;
+    min-height: 100vh;
     background-color: var(--white-color);
 }
 
@@ -10,11 +10,13 @@
     display: block;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
 }
 
 .app__work-title {
     text-align: center;
     transition: ease all .5s;
+    color: var(--gray-color);
 
     h1 {
         font-size: 100px;
@@ -23,6 +25,7 @@
     p {
         font-size: 30px;
         margin-bottom: 50px;
+
     }
 
     @media screen and(max-width: 660px) {

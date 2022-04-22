@@ -1,10 +1,10 @@
 import React from "react";
 import images from '../../../constants/images';
 
+
 const Card = (props) => {
     return (
         <div className='app__work-card'>
-            <div className='app__work-card-flex'>
             <div className="app__work-card-content"
                 style={
                     { backgroundImage: `url(${props.background}) ,linear-gradient(1deg, rgba(0, 0, 0, 0.33) 30%, rgba(255, 255, 255, 0.25) 100%)` }}>
@@ -20,7 +20,6 @@ const Card = (props) => {
             <div className="app__work-card-description">
                 <h1>{props.title}</h1>
                 <p><a href={props.link}>{props.link}</a></p>
-            </div>
             </div>
         </div>
     )
