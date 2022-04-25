@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from './props/WorkCard'
-import images from '../../constants/images'
 import {motion} from 'framer-motion';
+import Cards from './Cards';
 
 import './Work.scss'
 
@@ -20,34 +20,17 @@ const Work = () => {
         whileInView={{y:[200,0]}}
         transition={{duration:0.85, ease:'easeOut'}}
         >
-          <Card
-            title='Portfolio'
-            link='portfolio.com.br'
-            img={[images.html, images.css, images.react]}
-            background={images.portfolio}
-            githubLink='#'
-          />
-          <Card
-            title='Keeper App'
-            link='KeeperApp.com.br'
-            img={[images.html, images.css, images.react]}
-            background={images.keeper}
-            githubLink='https://github.com/Lucal22/Keeper-app'
-          />
-          <Card
-            title='Keeper App'
-            link='KeeperApp.com.br'
-            img={[images.html, images.css, images.react]}
-            background={images.keeper}
-            githubLink='https://github.com/Lucal22/Keeper-app'
-          />
-          <Card
-            title='Keeper App'
-            link='KeeperApp.com.br'
-            img={[images.html, images.css, images.react]}
-            background={images.keeper}
-            githubLink='https://github.com/Lucal22/Keeper-app'
-          />
+          {Cards.map((cards)=>{
+            return(
+            <Card
+            title={cards.title}
+            link={cards.link}
+            img={cards.img}
+            background={cards.background}
+            githubLink={cards.githubLink}
+            />
+            )
+          })}
         </motion.div>
       </div>
     </section>

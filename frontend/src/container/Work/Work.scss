@@ -20,6 +20,7 @@
 
     h1 {
         font-size: 100px;
+
     }
 
     p {
@@ -69,7 +70,7 @@
 
         &:hover {
             bottom: 25px;
-            box-shadow: 0 0 3em var(--gray-color);
+            box-shadow: 0 0 3em var(--secondary-color);
 
         }
 
