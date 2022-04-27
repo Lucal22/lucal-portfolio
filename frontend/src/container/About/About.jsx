@@ -1,30 +1,25 @@
 import React from 'react'
-import images from '../../constants/images';
-import {motion} from 'framer-motion';
+import Button from './components/Button'
 
 import './About.scss'
 
 const About = () => {
   return (
     <section className='app__about'>
-      <div className='app__about-config'>
-          <motion.div 
-          className='app__about-content'
-          whileInView={{y:[50,0]}}
-            transition={{duration:0.85, ease:'easeOut'}} 
-          >
-            <figure>
-              <img src={images.luis} alt='Luis Carlos'></img>
-            </figure>
-            <motion.div 
-            className='app__about-description'
-            whileInView={{y:[50,0]}}
-            transition={{duration:0.85, ease:'easeOut'}}    
-            >
-              <h1>Luís Carlos Santos Silvestre</h1>
-              <h2>Engenheiro Eletricista e Desenvolvedor Web Front-end</h2>
-            </motion.div>
-        </motion.div>
+      <div className='app__about-content'>
+        <h1>Formação e Tecnologias</h1>
+        <div className='app__about-grid'>
+          <div className='app__about-topics'>
+            {['Sobre mim', 'Graduação', 'Tecnologias'].map((item)=>{
+              return(<Button
+              title={item}
+              />)
+            })}
+          </div>
+          <div className='app__about-text'>
+            <h1>Text</h1>
+          </div>
+        </div>
       </div>
     </section>
   )

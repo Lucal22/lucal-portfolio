@@ -1,58 +1,67 @@
-.app__about {
-    display: flex;
+.app__about{
+    background-color: var(--white-color);
+}
+
+.app__about-content{
+    display: block;
+    justify-content: center;
+    max-width: 1200px;
     min-height: 100vh;
-    justify-content: center;
-    background-color:var(--gray-color) ;
-}
-
-.app__about-config {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 1200px;
     margin: 0 auto;
-    min-height: 100px;
-}
-.app__about-content {
-    display: flex;
     width: 100%;
-    max-width: 900px;
-    max-height: 230px;
-    padding: 50px;
-    justify-content: center;
-    border: 2px solid var(--white-color);
-
-    figure {
-        display: block;
-        position: absolute;
-        margin-top: -150px;
-        
-
-        img {
-            border-radius: 50%;
-            border: 2px solid white;
-            width: 150px;
-            object-fit: cover;
-            object-position: bottom;
-        }
-    }
-}
-.app__about-description {
-    text-align: center;
-    color: var(--white-color);
+    color: var(--gray-color);
 
     h1 {
-        font-size: 40px;
-        margin-bottom: 10px;
+        font-size: 50px;
+        font-family: var(--font-text);
     }
-    h2{
-        font-family: var(--font-base);
-        margin-bottom: 10px;
-    }
-    @media screen and(max-width: 650px) {
-        h1{
-            font-size: 28px;
+}
+
+.app__about-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.app__about-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 250px;
+    height: 50px;
+    border: 1.5px solid black;
+    border-radius: 25px;
+    background-color: var(--gray-color);
+    color: var(--white-color);
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--gray-color);
+        background-color: var(--white-color);
+        box-shadow: 0 0 3em var(--secondary-color);
+        
+        span{
+            box-shadow: 2px -2px 0 1px var(--gray-color) inset;
         }
     }
+
+    p{
+        padding-left: 25px;
+        font-size: 25px;
+    }
+}
+
+.app__about-arrow-div{
+    display: flex;
+    justify-content: center;
+    width: 50px;
+}
+
+.app__about-arrow{
+        padding: 10px;
+        box-shadow: 2px -2px 0 1px var(--white-color) inset;
+        border: solid transparent;
+        border-width: 0 0 2px 2px;
+        transform: rotate(225deg);
+
 }

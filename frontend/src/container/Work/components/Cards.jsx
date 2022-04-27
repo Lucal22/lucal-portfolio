@@ -1,4 +1,4 @@
-import images from '../../constants/images'
+import images from '../../../constants/images'
 
 
 const Cards = [
@@ -29,6 +29,6 @@ const Cards = [
         img: [images.html, images.css, images.react],
         background: images.keeper,
         githubLink: 'https://github.com/Lucal22/Keeper-app'
-    },
+    }
 ]
 export default Cards;
