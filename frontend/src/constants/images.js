@@ -20,6 +20,8 @@ import luis from '../assets/luis.jpg';
 import portfolio from '../assets/portfolio.png';
 import keeper from '../assets/keeper.png';
 import arrow from '../assets/arrow-down-pixel.png';
+import arduino from '../assets/arduino.png';
+import engeletrica from '../assets/engeletrica.png';
 
 export default {
   api,
@@ -42,4 +44,6 @@ export default {
   circle,
   luis,
   arrow,
+  arduino,
+  engeletrica
 };

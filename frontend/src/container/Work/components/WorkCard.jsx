@@ -7,7 +7,7 @@ const Card = (props) => {
         <div className='app__work-card'>
             <div className="app__work-card-content"
                 style={
-                    { backgroundImage: `url(${props.background}) ,linear-gradient(1deg, rgba(0, 0, 0, 0.33) 30%, rgba(255, 255, 255, 0.25) 100%)` }}>
+                    {backgroundImage: `url(${props.background}) ,linear-gradient(1deg, rgba(0, 0, 0, 0.33) 30%, rgba(255, 255, 255, 0.25) 100%)`}}>
                 <div className="app__work-card-skills">
                     <div>
                         {props.img.map((icons) => (<img src={icons} alt="Símbologia das tecnologias utilizada" />))}

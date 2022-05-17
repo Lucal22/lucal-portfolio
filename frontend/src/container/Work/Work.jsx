@@ -17,9 +17,10 @@ const Work = () => {
         whileInView={{y:[200,0]}}
         transition={{duration:0.85, ease:'easeOut'}}
         >
-          {Cards.map((cards)=>{
+          {Cards.map((cards, index)=>{
             return(
             <Card
+            key = {cards.key}
             title={cards.title}
             link={cards.link}
             img={cards.img}
