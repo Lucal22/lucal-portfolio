@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
 
 :root {
   --font-base: "DM Sans", sans-serif;
-  --font-text: "Source Sans Pro", Arial, sans-serif;
+  --font-text: 'Source Sans Pro', sans-serif;;
 
   --primary-color: #edf2f8;
   --secondary-color: #313bac;
@@ -13,6 +12,8 @@
   --gray-color: #6b7688;
   --brown-color: #46364a;
   --white-color: #ffffff;
+  --purple-color: rgb(138, 101, 181);
+  --green-color: rgb(131, 234, 167);
 }
 
 * {

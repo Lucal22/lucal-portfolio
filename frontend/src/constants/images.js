@@ -14,7 +14,6 @@ import sass from '../assets/sass.png';
 import typescript from '../assets/typescript.png';
 import vue from '../assets/vue.png';
 import github from '../assets/github.png';
-
 import circle from '../assets/circle.svg';
 import luis from '../assets/luis.jpg';
 import portfolio from '../assets/portfolio.png';
@@ -22,6 +21,10 @@ import keeper from '../assets/keeper.png';
 import arrow from '../assets/arrow-down-pixel.png';
 import arduino from '../assets/arduino.png';
 import engeletrica from '../assets/engeletrica.png';
+import autocad from '../assets/autocad.png';
+import warcraft from '../assets/warcraft.png';
+import horde from '../assets/horde.png';
+import minas from '../assets/minas.png';
 
 export default {
   api,
@@ -45,5 +48,9 @@ export default {
   luis,
   arrow,
   arduino,
-  engeletrica
+  engeletrica,
+  autocad,
+  warcraft,
+  horde,
+  minas
 };

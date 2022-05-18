@@ -19,11 +19,12 @@
 
 .app__about-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 400px 1fr;
 }
 
 .app__about-topics {
     margin: 0 auto;
+    margin-top: 300px;
 }
 
 .app__about-button {
@@ -42,12 +43,10 @@
     &:hover {
         color: var(--gray-color);
         background-color: var(--white-color);
-        box-shadow: 0 0 3em var(--secondary-color);
 
         span {
             box-shadow: 2px -2px 0 1px var(--gray-color) inset;
         }
-
 
     }
 
@@ -71,27 +70,33 @@
     transform: rotate(225deg);
 }
 
-.app__about-text {
-    margin: 0 auto;
+.app__about-card {
+    width: 100%;
+    min-height: 300px;
 }
 
-.app__about-card {
-    width: 500px;
-    min-height: 300px;
-
-
-
+.app__about-text-content {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 50px;
+    align-items: center;
 
     p {
-        display: flex;
         font-size: 30px;
         font-family: var(--font-text);
-        margin-bottom: 15px;
+        font-weight: 400;
+        color: var(--purple-color);
+        text-align: justify;
 
-        img {
-            width: 200px;
-            height: 200px;
+        span {
+            background: var(--green-color);
         }
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+
     }
 }
 
