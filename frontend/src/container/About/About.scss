@@ -56,6 +56,27 @@
     }
 }
 
+.app__about-button-true{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 250px;
+    height: 50px;
+    border: 1.5px solid black;
+    border-radius: 25px;
+    color: var(--gray-color);
+    background-color: var(--white-color);
+    margin-bottom: 20px;
+    cursor: pointer;
+    span {
+        box-shadow: 2px -2px 0 1px var(--gray-color) inset;
+    }
+    p {
+        padding-left: 25px;
+        font-size: 25px;
+    }
+}
+
 .app__about-arrow-div {
     display: flex;
     justify-content: center;
@@ -75,11 +96,15 @@
     min-height: 300px;
 }
 
+.app__about-text{
+    margin: 100px 0;
+}
+
 .app__about-text-content {
     display: flex;
     gap: 15px;
-    margin-bottom: 50px;
     align-items: center;
+    margin-bottom: 50px;
 
     p {
         font-size: 30px;
@@ -111,7 +136,13 @@
     display: flex;
 
     img {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
+}
+
+.app__about-tech-img-grid {
+    display: grid;
+    grid-template-columns: 60px 60px;
+    gap: 20px;
 }

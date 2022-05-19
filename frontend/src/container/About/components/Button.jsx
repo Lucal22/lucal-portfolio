@@ -4,9 +4,8 @@ const Button = (props) => {
   
   return (
     <div
-      className='app__about-button'
-      onMouseOver={props.onMouseOver}
-      onMouseOut={props.onMouseOut}
+      className={props.click?'app__about-button-true':'app__about-button'}
+      onClick={props.onClick}
       >
       <p>{props.title}</p>
       <div className='app__about-arrow-div'>

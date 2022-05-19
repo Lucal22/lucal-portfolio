@@ -2,35 +2,24 @@ import React, { useState } from 'react';
 import Button from './components/Button';
 import { motion } from 'framer-motion';
 import images from '../../constants/images'
-
-
+import {techIcons, techIconsRight} from './components/TechIcons';
 
 import './About.scss'
 
 const About = () => {
-  const [about, setAbout] = useState(false)
+  const [about, setAbout] = useState(true)
   const [formation, setFormation] = useState(false)
   const [tech, setTech] = useState(false)
 
-  function showAbout() {
-    setAbout(true);
+  function handleAbout() {
+    setAbout(!about);
   }
-  function hideAbout() {
-    setAbout(false);
+  function handleFormation() {
+    setFormation(!formation);
   }
-  function showFormation() {
-    setFormation(true);
+  function handleTech() {
+    setTech(!tech);
   }
-  function hideFormation() {
-    setFormation(false);
-  }
-  function showTech() {
-    setTech(true);
-  }
-  function hideTech() {
-    setTech(false);
-  }
-
 
   return (
     <section className='app__about'>
@@ -40,18 +29,18 @@ const About = () => {
           <div className='app__about-topics'>
             <Button
               title='Sobre mim'
-              onMouseOver={showAbout}
-              onMouseOut={hideAbout}
+              onClick={handleAbout}
+              click={about}
             />
             <Button
               title='Graduação'
-              onMouseOver={showFormation}
-              onMouseOut={hideFormation}
+              onClick={handleFormation}
+              click={formation}
             />
             <Button
               title='Tecnologias'
-              onMouseOver={showTech}
-              onMouseOut={hideTech}
+              onClick={handleTech}
+              click={tech}
             />
           </div>
 
@@ -60,11 +49,11 @@ const About = () => {
               whileInView={{ y: [50, 0] }}
               transition={{ duration: 0.85, ease: 'easeOut' }}
 
-              style={about ? { display: 'block' } : { display: 'block' }}
+              style={about ? { display: 'block' } : { display: 'none' }}
               className='app__about-card'>
               <div className='app__about-text-content'>
                 <p>
-                  Meu nome é Luís Carlos, tenho 25 anos e um grande interesse por <span> tecnologia</span>.
+                  Meu nome é Luís Carlos, tenho 25 anos e um grande interesse por <span>tecnologia.</span>
                 </p>
               </div>
               <div className='app__about-text-content'>
@@ -105,7 +94,7 @@ const About = () => {
                   <img src={images.engeletrica} alt='Engenharia elétrica' />
                 </div>
                 <p>
-                  Após concluir o curso técnico iniciei o curso de <span>Engenharia Elétrica</span>, que me mostrou outras maneiras de se utilizar programação para simulações e cálculos com <span>Matlab e Python.</span>
+                  Após concluir o curso técnico iniciei o curso de <span>Engenharia Elétrica,</span> que me mostrou outras maneiras de se utilizar programação para simulações e cálculos com <span>Matlab e Python.</span>
                 </p>
               </div>
               <div className='app__about-text-content'>
@@ -125,21 +114,30 @@ const About = () => {
 
               style={tech ? { display: 'block' } : { display: 'none' }}
               className='app__about-card'>
-              <div className='app__about-tech' >
-                <h1>Tecnologias estudadas:</h1>
-                <div className='app__about-tech-img'>
-                  <img src={images.engeletrica} alt='Engenharia elétrica' />
-                  <img src={images.engeletrica} alt='Engenharia elétrica' />
-                  <img src={images.engeletrica} alt='Engenharia elétrica' />
-
+              <div className='app__about-text-content'>
+                <div className='app__about-tech-img app__about-tech-img-grid'>
+                  {techIcons.map((icons) => {
+                    return <img src={icons.image} alt={icons.alt} />
+                  })}
                 </div>
+                <p>
+                  Em maio de 2021 decidi aprender mais sobre programação e então comecei os meus estudos primeiramente com <span>HTML, CSS e JavaScript,</span> através de cursos, documentação e praticando.
+                </p>
               </div>
-              <p>
-                Em maio do ano passado decidi aprender mais sobre programação e então comecei os meus estudos primeiramente com HTML, CSS e JavaScript.
-              </p>
-              <p>
-                E nos últimos meses tenho estudado e desenvolvido projetos utilizando React.js como framework para o frontend e node.js para backend além de também procurar outras alternativas para estilização como Tailwind CSS, Bootstrap e SCSS.
-              </p>
+              <div className='app__about-text-content'>
+
+                <p>
+                  E nos últimos meses tenho estudado e desenvolvido projetos utilizando frameworks como <span>React.js</span> para o frontend e <span>Node.js</span> para backend além de também procurar outras alternativas para estilização como <span>Tailwind CSS, Bootstrap e SCSS.</span>
+                </p>
+                <div className='app__about-tech-img app__about-tech-img-grid'>
+                  {techIconsRight.map((icons) => {
+                    return <img src={icons.image} alt={icons.alt} />
+                  })}
+                </div>
+
+              </div>
+
+
             </motion.div>
 
           </div>

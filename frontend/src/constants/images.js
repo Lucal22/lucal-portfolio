@@ -25,6 +25,7 @@ import autocad from '../assets/autocad.png';
 import warcraft from '../assets/warcraft.png';
 import horde from '../assets/horde.png';
 import minas from '../assets/minas.png';
+import githubnoir from '../assets/githubnoir.png';
 
 export default {
   api,
@@ -52,5 +53,6 @@ export default {
   autocad,
   warcraft,
   horde,
-  minas
+  minas,
+  githubnoir
 };
