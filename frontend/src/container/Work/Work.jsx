@@ -1,6 +1,5 @@
 import React from 'react'
 import Card from './components/WorkCard'
-import {motion} from 'framer-motion';
 import Cards from './components/Cards';
 
 import './Work.scss'
@@ -13,10 +12,7 @@ const Work = () => {
           <h1>Projetos</h1>
           <p>Esses são alguns dos <span>projetos</span> que desenvolvi.</p>
         </div>
-        <motion.div className='app__work-portfolio'
-        whileInView={{y:[200,0]}}
-        transition={{duration:0.85, ease:'easeOut'}}
-        >
+        <div className='app__work-portfolio'>
           {Cards.map((cards, index)=>{
             return(
             <Card
@@ -29,7 +25,7 @@ const Work = () => {
             />
             )
           })}
-        </motion.div>
+        </div>
       </div>
     </section>
   )

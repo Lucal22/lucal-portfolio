@@ -38,6 +38,7 @@
 }
 
 .app__work-portfolio {
+    margin: 0 15px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;

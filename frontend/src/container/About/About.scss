@@ -20,11 +20,25 @@
 .app__about-grid {
     display: grid;
     grid-template-columns: 400px 1fr;
+
+    @media screen and(max-width: 900px) {
+        display: block;
+        align-items: center;
+        margin: 0 15px;
+    }
 }
 
 .app__about-topics {
     margin: 0 auto;
     margin-top: 300px;
+
+    @media screen and(max-width: 900px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+
+    }
 }
 
 .app__about-button {
@@ -54,6 +68,21 @@
         padding-left: 25px;
         font-size: 25px;
     }
+
+    @media screen and(max-width: 900px) {
+        align-items: center;
+        justify-content: center;
+        min-width: 200px;
+        &:hover {
+            color: var(--gray-color);
+            background-color: var(--white-color);
+        }
+        p {
+            padding-left: 0;
+            font-size: 25px;
+        }
+    
+    }
 }
 
 .app__about-button-true{
@@ -75,12 +104,24 @@
         padding-left: 25px;
         font-size: 25px;
     }
+    @media screen and(max-width: 900px) {
+        align-items: center;
+        justify-content: center;
+        min-width: 200px;
+        p {
+            padding-left: 0;
+            font-size: 25px;
+        }
+    }
 }
 
 .app__about-arrow-div {
     display: flex;
     justify-content: center;
     width: 50px;
+    @media screen and(max-width: 900px) {
+        display: none;
+    }
 }
 
 .app__about-arrow {
@@ -146,3 +187,4 @@
     grid-template-columns: 60px 60px;
     gap: 20px;
 }
+
