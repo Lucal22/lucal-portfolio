@@ -6,6 +6,7 @@ const Button = (props) => {
     <div
       className={props.click?'app__about-button-true':'app__about-button'}
       onClick={props.onClick}
+      style={props.style}
       >
       <p>{props.title}</p>
       <div className='app__about-arrow-div'>
