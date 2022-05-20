@@ -14,7 +14,6 @@ const About = () => {
   return (
     <section className='app__about'>
       <div className='app__about-content'>
-        <h1>  </h1>
         <div className='app__about-grid'>
           <div className='app__about-topics'>
             <Button
