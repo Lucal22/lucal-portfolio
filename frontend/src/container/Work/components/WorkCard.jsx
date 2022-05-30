@@ -13,13 +13,19 @@ const Card = (props) => {
                         {props.img.map((icons) => (<img src={icons} alt="Símbologia das tecnologias utilizada" />))}
                     </div>
                     <div>
-                        <a href={props.githubLink}><img src={images.github} alt="Símbolo github" /></a>
+                        <a href={props.githubLink}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        ><img src={images.github} alt="Símbolo github" /></a>
                     </div>
                 </div>
             </div>
             <div className="app__work-card-description">
                 <h1>{props.title}</h1>
-                <p><a href={props.link}>{props.link}</a></p>
+                <p><a href={props.link}
+                target='_blank'
+                rel='noopener noreferrer'
+                >{props.link}</a></p>
             </div>
         </div>
     )

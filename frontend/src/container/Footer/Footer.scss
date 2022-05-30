@@ -1,0 +1,19 @@
+.app__footer-content{
+        display: flex;
+        max-width: 1200px;
+        min-height: 70px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+
+
+        div{
+            display: flex;
+            flex-direction: column;
+            p{
+                justify-content: center;
+                color: var(--gray-color);
+            }
+        }
+}
+

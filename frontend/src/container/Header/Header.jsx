@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <nav className='app__navbar'>
       <ul className='app__navbar-links'>
-        {['Home','Formação', 'Projetos',  'contato'].map((item)=>(
+        {['Home','Sobre', 'Projetos', 'Contato'].map((item)=>(
           <li className='app__flex p-text' key={`link-${item}`}>
             <div />
             <a href={`#${item}`}>{item}</a>
@@ -28,7 +28,7 @@ const Header = () => {
             >
               <HiX onClick={()=>setToggle(false)}/>
               <ul>
-              {['home', 'Formação', 'Projetos','contato'].map((item)=>(
+              {['Home','Sobre', 'Projetos', 'Contato'].map((item)=>(
           <li key={item}>
             <a href={`#${item}`}  onClick={()=>setToggle(false)}>{item}</a>
           </li>

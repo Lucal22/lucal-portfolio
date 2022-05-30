@@ -6,10 +6,10 @@ import './Work.scss'
 
 const Work = () => {
   return (
-    <section className='app__work'>
+    <section id='Projetos' className='app__work'>
       <div className='app__work-content'>
         <div className='app__work-title'>        
-          <h1>Projetos</h1>
+          <h1>PROJETOS</h1>
           <p>Esses são alguns dos <span>projetos</span> que desenvolvi.</p>
         </div>
         <div className='app__work-portfolio'>

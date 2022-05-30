@@ -12,7 +12,7 @@ const About = () => {
   const [tech, setTech] = useState(false)
 
   return (
-    <section className='app__about'>
+    <section id='Sobre' className='app__about'>
       <div className='app__about-content'>
         <div className='app__about-grid'>
           <div className='app__about-topics'>
@@ -87,7 +87,7 @@ const About = () => {
             </div>
             <div className='app__about-text-content'>
               <p>
-                Fiz estágio na engenharia CAPEX de uma multinacional e meses após o término, trabalhei como <span>auxiliar de projetos elétricos</span> em uma empresa de desenvolvimento de projetos industriais.
+                Fiz <span>estágio</span> na engenharia CAPEX de uma multinacional e meses após o término, trabalhei como <span>auxiliar de projetos elétricos</span> em uma empresa de desenvolvimento de projetos industriais.
               </p>
               <div>
                 <img src={images.autocad} alt='Engenharia elétrica' />

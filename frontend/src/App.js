@@ -6,14 +6,18 @@ import './App.scss'
 
 const App = () => {
   return (
+
     <div className='app'>
-      <Header />
-      <Home />
-      <About />
-      <Work />
-      <Form />
-      <Footer />
+      <React.StrictMode>
+        <Header />
+        <Home />
+        <About />
+        <Work />
+        <Form />
+        <Footer />
+      </React.StrictMode>
     </div>
+
   )
 }
 

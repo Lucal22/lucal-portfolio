@@ -1,12 +1,101 @@
-.app__form{
+.app__form {
     background-color: var(--white-color);
 }
 
-.app__form-content{
+.app__form-content {
     display: block;
-    justify-content: center;
     max-width: 1200px;
     min-height: 100vh;
     margin: 0 auto;
 
+}
+
+.app__form-title {
+    font-size: 40px;
+    font-family: var(--font-title);
+    padding: 90px 0;
+    text-align: center;
+    }
+
+
+
+.app__form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    h2{
+        font-family: var(--font-title);
+
+        margin-bottom: 20px;
+    }
+}
+
+.app__form-social-medias {
+    li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        a {
+            text-decoration: none;
+            color: var(--gray-color);
+            padding-left: 10px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.app__form-fields-settings {
+    display: flex;
+    flex-direction: column;
+
+    div {
+        margin-bottom: 25px;
+
+        input,
+        textarea {
+            width: 500px;
+            padding: 10px;
+            font-size: 16px;
+            color: black;
+            font-style: var(--font-base);
+            border: 2px solid var(--light-gray-color);
+            border-radius: 4px;
+            resize: none;
+        }
+
+        textarea {
+            height: 200px;
+        }
+
+    }
+}
+
+.app__form-fields-button {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--gray-color);
+
+    font-weight: 500;
+    color: var(--white-color);
+    outline: none;
+    font-family: var(--font-base);
+
+    &:disabled{
+        background-color: var(--light-gray-color);
+        &:hover{
+            cursor:default;
+        }
+    }
+    
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--light-gray-color);
+    }
 }

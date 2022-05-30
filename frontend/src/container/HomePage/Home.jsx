@@ -6,7 +6,7 @@ import './Home.scss'
 
 const Home = () => {
   return (
-    <section className='app__home'>
+    <section id='Home' className='app__home'>
       <div className='app__home-config'>
           <motion.div 
           className='app__home-content'
