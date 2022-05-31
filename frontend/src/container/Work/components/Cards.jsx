@@ -12,7 +12,7 @@ const Cards = [
             },
             {
                 icon: images.sass,
-                title: 'sass'
+                title: 'scss'
             },
             {
                 icon: images.react,
