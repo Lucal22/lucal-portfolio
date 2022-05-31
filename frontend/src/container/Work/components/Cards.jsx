@@ -5,7 +5,24 @@ const Cards = [
         key: 1,
         title: 'Portfolio',
         link: 'portfolio.com.br',
-        img: [images.html, images.css, images.react],
+        img: [
+            {
+                icon: images.html,
+                title: 'html'
+            },
+            {
+                icon: images.sass,
+                title: 'sass'
+            },
+            {
+                icon: images.react,
+                title: 'reactjs'
+            },
+            {
+                icon: images.node,
+                title: 'nodejs'
+            },
+        ],
         background: images.portfolio,
         githubLink: '#'
     },
@@ -13,25 +30,47 @@ const Cards = [
         key: 2,
         title: 'Keeper App',
         link: 'KeeperApp.com.br',
-        img: [images.html, images.css, images.react],
+        img: [
+            {
+                icon: images.html,
+                title: 'html'
+            },
+            {
+                icon: images.css,
+                title: 'css'
+            },
+            {
+                icon: images.react,
+                title: 'reactjs'
+            },
+        ],
         background: images.keeper,
         githubLink: 'https://github.com/Lucal22/Keeper-app'
     },
     {
         key: 3,
-        title: 'Portfolio',
-        link: 'portfolio.com.br',
-        img: [images.html, images.css, images.react],
-        background: images.portfolio,
-        githubLink: '#'
+        title: 'Widget',
+        link: 'https://widget-project-nlw-8.vercel.app/',
+        img: [
+            {
+                icon: images.html,
+                title: 'html'
+            },
+            {
+                icon: images.tailwind,
+                title: 'tailwindcss'
+            },
+            {
+                icon: images.typescript,
+                title: 'typescript'
+            },
+            {
+                icon: images.node,
+                title: 'nodejs'
+            },
+        ],
+        background: images.widget,
+        githubLink: 'https://github.com/Lucal22/WidgetProject-NLW-8'
     },
-    {
-        key: 4,
-        title: 'Keeper App',
-        link: 'KeeperApp.com.br',
-        img: [images.html, images.css, images.react],
-        background: images.keeper,
-        githubLink: 'https://github.com/Lucal22/Keeper-app'
-    }
 ]
 export default Cards;

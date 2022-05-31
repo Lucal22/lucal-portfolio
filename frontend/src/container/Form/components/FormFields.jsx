@@ -70,14 +70,16 @@ const FormField = (props) => {
             type='text'
             value={formItems.message}
             onChange={handleChange}
-            placeholder='Mensagem'
+            placeholder='Assunto'
           ></textarea>
         </div>
+        <div>
         <button
           className='app__form-fields-button'
           onClick={handleSubmitMsg}
           disabled={formItems.message.length === 0 || formItems.email.length === 0 || isSendingMsg}
         >Enviar mensagem</button>
+        </div>
       </form>
       </div>
   )

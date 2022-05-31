@@ -26,6 +26,8 @@ import warcraft from '../assets/warcraft.png';
 import horde from '../assets/horde.png';
 import minas from '../assets/minas.png';
 import githubnoir from '../assets/githubnoir.png';
+import tailwind from '../assets/tailwind.png';
+import widget from '../assets/widget.png';
 
 export default {
   api,
@@ -54,5 +56,7 @@ export default {
   warcraft,
   horde,
   minas,
-  githubnoir
+  githubnoir,
+  tailwind,
+  widget,
 };
