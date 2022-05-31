@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { api } from "../../../lib/api";
 
 const FormField = (props) => {
   
@@ -11,7 +11,7 @@ const FormField = (props) => {
     message:''
   })
 
-  function handleChange(event) {
+  async function handleChange(event) {
     const {name, value} = event.target;
     setFormItems(prevNote=>{
       return {
@@ -19,18 +19,20 @@ const FormField = (props) => {
         [name]: value
       }
     })
+    
+
+  }
+  async function submitEmail(event) {
+    event.preventDefault()
+    setIsSendingMsg(true);
+    await api.post('/emails', {
+      name: formItems.name,
+      email: formItems.email,
+      subject: formItems.subject,
+      message: formItems.message,
+  })
   }
 
-  async function handleSubmitMsg(event) {
-    event.preventDefault();
-    setIsSendingMsg(true);
-  //   await api.post('/feedbacks', {
-  //     type: feedbackType,
-  //     comment,
-  //     screenshot,
-  // })
-  console.log(formItems.email);
-  }
   return (
     <div>
      <h2>Formulário para contato:</h2>
@@ -42,7 +44,6 @@ const FormField = (props) => {
             value={formItems.name}
             onChange={handleChange}
             placeholder='Nome'
-            // onChange={}
           />
         </div>
         <div>
@@ -76,7 +77,7 @@ const FormField = (props) => {
         <div>
         <button
           className='app__form-fields-button'
-          onClick={handleSubmitMsg}
+          onClick={submitEmail}
           disabled={formItems.message.length === 0 || formItems.email.length === 0 || isSendingMsg}
         >Enviar mensagem</button>
         </div>
