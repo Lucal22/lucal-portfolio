@@ -31,6 +31,8 @@ const FormField = (props) => {
       subject: formItems.subject,
       message: formItems.message,
   })
+  setIsSendingMsg(false);
+
   }
 
   return (
