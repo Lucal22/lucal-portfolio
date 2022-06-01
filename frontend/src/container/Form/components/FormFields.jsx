@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { api } from "../../../lib/api";
 
-const FormField = (props) => {
+const FormField = () => {
   
   const [isSendingMsg, setIsSendingMsg] = useState(false)
   const [formItems, setFormItems] = useState({
