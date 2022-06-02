@@ -1,5 +1,7 @@
 import React from 'react'
-import { LinkedinLogo, GithubLogo, Envelope } from "phosphor-react";
+import { LinkedinLogo, Envelope } from "phosphor-react";
+import { IoLogoGithub } from 'react-icons/io'
+
 
 const SocialMedias = () => {
   return (
@@ -27,9 +29,8 @@ const SocialMedias = () => {
             https://www.linkedin.com/in/lu%C3%ADs-carlos-723a28165/</a>
         </li>
         <li>
-          <GithubLogo
+          <IoLogoGithub
             size={32}
-            weight="light"
           />
           <a href='https://github.com/Lucal22'
           target='_blank'
