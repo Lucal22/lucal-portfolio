@@ -83,8 +83,6 @@ This project is a responsive page developed using react.js on frontend, to show 
 
 ## Development
 
-To developt
-
  To develop the frontend, framer motion was used to animate the home page, the bar menu and the 'about' section, and styling using scss makes it easy to change the style of specific child components.
 
 Using 'props' it was possible to simplify parts of the code where procedures would be repeated and thus facilitate future insertions as adding new projects.
