@@ -29,7 +29,7 @@ const Cards = [
     {
         key: 2,
         title: 'Keeper App',
-        link: 'KeeperApp.com.br',
+        link: '',
         img: [
             {
                 icon: images.html,
