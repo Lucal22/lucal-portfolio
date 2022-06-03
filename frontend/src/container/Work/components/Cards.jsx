@@ -19,6 +19,10 @@ const Cards = [
                 title: 'reactjs'
             },
             {
+                icon: images.typescript,
+                title: 'typescript'
+            },
+            {
                 icon: images.node,
                 title: 'nodejs'
             },
