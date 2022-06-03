@@ -1,6 +1,6 @@
-# Lucal Portfolio
+# Lucal Portfolio pt-br
 
-Este projeto é uma page responsiva feita em react.js com o intuito de apresentar alguns dos principais projetos desenvolvidos por mim utilizando tecnologias de desenvolvimento WEB.
+Este projeto é uma page responsiva feita em react.js com o intuito de apresentar alguns dos principais projetos desenvolvidos por mim durante meus estudos.
 
 ## Tecnologias
 
@@ -46,4 +46,55 @@ O frontend foi hospedado no [Vercel](https://vercel.com/) e o backend hospedado 
 
 
 ## Licença
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+# Lucal Portfolio en-us
+
+This project is a responsive page developed using react.js on frontend, to show some of my main projects developed during my studies.
+
+## Technologies
+
+### Frontend
+- [HTML](https://www.w3schools.com/html/)
+- [CSS](https://www.w3schools.com/css/)
+- [React.js](https://pt-br.reactjs.org/)
+
+### Backend
+- [TypeScript](https://www.typescriptlang.org/)
+- [Node.js](https://nodejs.org/en/)
+
+## Libs
+
+### Frontend
+- [Framer motion](https://www.framer.com/motion/)
+- [SCSS](https://sass-lang.com/)
+- [Axios](https://axios-http.com/ptbr/docs/intro)
+
+### Backend
+- [Express](https://expressjs.com/pt-br/)
+- [CORS](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/CORS)
+- [Prisma](https://www.prisma.io/)
+- [Nodemailer](https://nodemailer.com/about/)
+
+## Utilities
+- [Phosphor icons](https://phosphoricons.com/)
+- [React icons](https://react-icons.github.io/react-icons)
+
+## Development
+
+ To develop the frontend, framer motion was used to animate the home page, the bar menu and the 'about' section, and styling using scss makes it easy to change the style of specific child components.
+
+Using 'props' it was possible to simplify parts of the code where procedures would be repeated and thus facilitate future insertions as adding new projects.
+
+For the data entered in the form, it was used state components and an asynchronous function to send the information using Axios.
+
+Express was used to perform the route where the data would be received and sent to the database that was configured using Prisma.
+
+At the same time that the data was sent to the database, the nodemailer was used so that it was also possible to configure the settings to send the message to an email.
+
+The frontend was hosted on [Vercel](https://vercel.com/) and the backend hosted on [Railway](https://railway.app/).
+
+
+## License
 [MIT](https://choosealicense.com/licenses/mit/)
