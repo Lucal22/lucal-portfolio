@@ -4,7 +4,7 @@ const Cards = [
     {
         key: 1,
         title: 'Portfolio',
-        link: 'portfolio.com.br',
+        link: 'https://lucal-portfolio.vercel.app/',
         img: [
             {
                 icon: images.html,
