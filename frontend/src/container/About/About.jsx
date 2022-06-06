@@ -115,7 +115,7 @@ const About = () => {
             <div className='app__about-text-content'>
 
               <p>
-                E nos últimos meses tenho estudado e desenvolvido projetos utilizando frameworks como <span>React.js</span> para o frontend e <span>Node.js</span> para backend além de também procurar outras alternativas para estilização como <span>Tailwind CSS, Bootstrap e SCSS.</span>
+                E nos últimos meses tenho estudado e desenvolvido projetos utilizando frameworks como <span>React.js</span> para o frontend e <span>Node.js</span> para backend além de também procurar outras alternativas para estilização como <span>Tailwind CSS, Bootstrap e SASS.</span>
               </p>
               <div className='app__about-tech-img app__about-tech-img-grid'>
                 {techIconsRight.map((icons, index) => {
