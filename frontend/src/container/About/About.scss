@@ -15,7 +15,8 @@
         font-size: 50px;
         font-family: var(--font-text);
     }
-    @media screen and(max-width: 900px){
+
+    @media screen and(max-width: 900px) {
         min-height: 400px;
     }
 }
@@ -81,19 +82,21 @@
         align-items: center;
         justify-content: center;
         min-width: 200px;
+
         &:hover {
             color: var(--gray-color);
             background-color: var(--white-color);
         }
+
         p {
             padding-left: 0;
             font-size: 25px;
         }
-    
+
     }
 }
 
-.app__about-button-true{
+.app__about-button-true {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,17 +108,21 @@
     background-color: var(--white-color);
     margin-bottom: 20px;
     cursor: pointer;
+
     span {
         box-shadow: 2px -2px 0 1px var(--gray-color) inset;
     }
+
     p {
         padding-left: 25px;
         font-size: 25px;
     }
+
     @media screen and(max-width: 900px) {
         align-items: center;
         justify-content: center;
         min-width: 200px;
+
         p {
             padding-left: 0;
             font-size: 25px;
@@ -127,6 +134,7 @@
     display: flex;
     justify-content: center;
     width: 50px;
+
     @media screen and(max-width: 900px) {
         display: none;
     }
@@ -145,7 +153,7 @@
     min-height: 300px;
 }
 
-.app__about-text{
+.app__about-text {
     margin: 100px 0;
 }
 
@@ -156,7 +164,7 @@
     margin-bottom: 50px;
 
     p {
-        font-size: 30px;
+        font-size: 3rem;
         font-family: var(--font-text);
         font-weight: 400;
         color: var(--purple-color);
@@ -195,4 +203,3 @@
     grid-template-columns: 60px 60px;
     gap: 20px;
 }
-
