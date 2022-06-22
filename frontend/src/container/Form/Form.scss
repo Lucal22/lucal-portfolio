@@ -49,11 +49,13 @@
             }
         }
     }
+
     @media screen and(max-width: 750px) {
         display: flex;
         flex-direction: column;
         align-items: center;
-        li{
+
+        li {
             padding-left: 40px;
         }
     }
@@ -67,8 +69,9 @@
     div {
         margin-bottom: 25px;
 
-        
-        input, textarea {
+
+        input,
+        textarea {
             width: 450px;
             padding: 10px;
             font-size: 16px;
@@ -84,17 +87,19 @@
         }
 
     }
+
     @media screen and(max-width: 750px) {
-        div{
+        div {
             display: flex;
             flex-direction: column;
             align-items: center;
+
             input,
             textarea {
-                width: 400px;
+                max-width: 400px;
             }
         }
-        
+
     }
 }
 

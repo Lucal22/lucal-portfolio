@@ -28,6 +28,7 @@ import minas from '../assets/minas.png';
 import githubnoir from '../assets/githubnoir.png';
 import tailwind from '../assets/tailwind.png';
 import widget from '../assets/widget.png';
+import nations from '../assets/nations.png';
 
 export default {
   api,
@@ -36,6 +37,7 @@ export default {
   git,
   portfolio,
   keeper,
+  nations,
   graphql,
   html,
   javascript,
