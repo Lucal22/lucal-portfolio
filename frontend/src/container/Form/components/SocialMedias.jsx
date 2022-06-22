@@ -22,19 +22,19 @@ const SocialMedias = () => {
             size={32}
             weight="light"
           />
-          <a 
-          href='https://www.linkedin.com/in/lu%C3%ADs-carlos-723a28165/'
-          target='_blank'
-          rel='noopener noreferrer'>
-            https://www.linkedin.com/in/lu%C3%ADs-carlos-723a28165/</a>
+          <a
+            href='https://www.linkedin.com/in/lu%C3%ADs-carlos-723a28165/'
+            target='_blank'
+            rel='noopener noreferrer'>
+            https://www.linkedin.com/in/luis-carlos</a>
         </li>
         <li>
           <IoLogoGithub
             size={32}
           />
           <a href='https://github.com/Lucal22'
-          target='_blank'
-          rel='noopener noreferrer'>
+            target='_blank'
+            rel='noopener noreferrer'>
             https://github.com/Lucal22</a>
         </li>
       </ul>
