@@ -1,12 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import FormField from './components/FormFields'
 import SocialMedias from './components/SocialMedias'
 
 import './Form.scss'
 
 const Form = () => {
-
-  const [isSent, setIsSent] = useState(false)
 
   return (
     <section id='Contato' className='app__form'>
@@ -16,13 +14,11 @@ const Form = () => {
           <h1>CONTATO</h1>
         </div>
         <div className='app__form-grid'>
-        <SocialMedias />
-          {!isSent ?
-            <div className='app__form-fields-settings'>
+          <SocialMedias />
+          <div className='app__form-fields-settings'>
             <FormField
             />
-            </div>
-            :<div>Obrigado por entrar em contato</div>}
+          </div>
         </div>
       </div>
     </section>
