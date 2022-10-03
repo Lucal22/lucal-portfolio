@@ -37,7 +37,7 @@ const About = () => {
             <motion.div
               animate={{ y: about ? [50, 0] : [0, 0] }}
               transition={{ duration: 0.85, ease: 'easeOut' }}
-              style={about /*|| !formation & !tech*/? { display: 'block' } : {display: 'none'}}
+              style={about || !formation & !tech? { display: 'block' } : {display: 'none'}}
               className='app__about-card'>
             <div className='app__about-text-content'>
               <p>

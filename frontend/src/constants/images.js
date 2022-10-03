@@ -1,4 +1,3 @@
-
 import api from '../assets/api.png';
 import css from '../assets/css.png';
 import flutter from '../assets/flutter.png';
@@ -29,9 +28,20 @@ import githubnoir from '../assets/githubnoir.png';
 import tailwind from '../assets/tailwind.png';
 import widget from '../assets/widget.png';
 import nations from '../assets/nations.png';
+import strapi from '../assets/strapi.png';
+import next from '../assets/next.png';
+import blog from '../assets/blog.png';
+import postgresql from '../assets/postgresql.png';
+import strapipage from '../assets/strapipage.png';
+
 
 export default {
   api,
+  strapipage,
+  blog,
+  postgresql,
+  strapi,
+  next,
   css,
   flutter,
   git,

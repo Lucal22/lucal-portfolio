@@ -97,5 +97,52 @@ const Cards = [
         background: images.nations,
         githubLink: 'https://github.com/Lucal22/nations-game'
     },
+    {
+        key: 5,
+        title: 'Blog-frontend',
+        link: 'https://lucal-thoughts.vercel.app/',
+        img: [
+            {
+                icon: images.html,
+                title: 'html'
+            },
+            {
+                icon: images.tailwind,
+                title: 'tailwindcss'
+            },
+            {
+                icon: images.next,
+                title: 'next.js'
+            },
+            {
+                icon: images.typescript,
+                title: 'typescript'
+            },
+            {
+                icon: images.graphql,
+                title: 'graphql'
+            },
+        ],
+        background: images.blog,
+        githubLink: 'https://github.com/Lucal22/lucal-thoughts'
+    },
+    {
+        key: 6,
+        title: 'Blog-backend',
+        link: '',
+        img: [
+            {
+                icon: images.strapi,
+                title: 'strapi'
+            },
+            {
+                icon: images.postgresql,
+                title: 'postgresql'
+            },
+
+        ],
+        background: images.strapipage,
+        githubLink: 'https://github.com/Lucal22/blog-strapi-api'
+    },
 ]
 export default Cards;
